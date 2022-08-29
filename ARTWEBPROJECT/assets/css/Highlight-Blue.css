@@ -1,0 +1,122 @@
+.highlight-blue {
+  color: #fff;
+  background-color: rgba(30,83,221,0.95);
+  padding: 50px 0;
+  height: 100%;
+  opacity: 0.64;
+  background-image: url("../../assets/img/astronaut-3840x2560-beach-winter-space-suit-4k-11458.jpg");
+}
+
+.highlight-blue p {
+  color: #1c222a;
+  line-height: 1.5;
+  margin-top: 16px;
+  margin-bottom: 43px;
+  font-family: Asap, sans-serif;
+}
+
+.highlight-blue h2 {
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(96,75,75);
+  height: 61px;
+  max-width: 500px;
+  margin-top: 31px;
+}
+
+.highlight-blue .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-blue .buttons {
+  text-align: center;
+}
+
+.highlight-blue .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.highlight-blue .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-blue .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 6px;
+  color: #4d6069;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 14px 24px;
+  background: transparent;
+  transition: background-color 0.25s;
+}
+
+#signInOnLandingPage {
+  color: rgb(28,31,34);
+  font-size: 14px;
+  font-family: Asap, sans-serif;
+}
+
+#signInButtonOnLand {
+  margin-top: -3px;
+  height: 44px;
+  font-family: Asap, sans-serif;
+  min-height: 0px;
+}
+
+#LandButtons {
+}
+
+#loginForm {
+  max-width: 335px;
+}
+
+#backLinkOnLogin {
+  color: rgb(130,141,152);
+  font-family: Asap, sans-serif;
+  text-decoration: none;
+  /*text-align: center;*/
+  /*align-items: center;*/
+}
+
+#FormGroupReg {
+  max-width: 340px;
+  align-items: center;
+}
+
+#RegForm {
+  max-width: 340px;
+  background-color: rgba(0,36,90,0.86);
+  max-height: 500px;
+  height: 500px;
+}
+
+#userNameInput {
+  background: #f7f9fc;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+  margin-top: 12px;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <!--<link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!--<link rel="stylesheet" href="assets/css/Login-Form-Dark.css">-->
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript">
+        function validate() {
+            if (document.regForm.email.value == "") {
+                alert("Please fill out the email");
+                document.regForm.email.focus();
+                return false;
+            }
+            var emailID = document.regForm.email.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+
+            if (atpos < 1 || (dotpos - atpos < 2)) {
+                alert("Please enter correct email ID")
+                document.regForm.EMail.focus();
+                return false;
+            }
+            return (true);
+            if (document.regForm.pwd.value == document.regForm.pwd_repeat) {
+                alert("Password do not match");
+                document.regForm.pwd.focus();
+                return false;
+
+            }
+        }
+    </script>
+
+</head>
+
+<body style="background-image: url(&quot;assets/img/astronaut-3840x2560-beach-winter-space-suit-4k-11458.jpg&quot;);">
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder" style="background-image: url(&quot;assets/img/mandala_second_WEB.jpg&quot;);">
+            </div>
+            <form method="post" name="regForm" action="process.php">
+                <h2 class="text-center"><strong>Create</strong> an account.</h2>
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Email"><br>
+                    <input class="form-control" type="text" name="username" id="userNameInput" placeholder="Username">
+                </div>
+                <div class="form-group"><input class="form-control" type="password" id="pwd" name="password"
+                        placeholder="Password">
+                </div>
+                <div class="form-group"><input class="form-control" type="password" id="pwd-repeat"
+                        name="password_repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input"
+                                type="checkbox" required>I agree to the license terms.</label></div>
+                </div>
+                <div class="form-group"><button class="btn btn-primary btn-block" id="btnSubmit" name="register"
+                        type="submit">Sign
+                        Up</button></div><a class="already" href="loginPage.html">You already have an account? Login
+                    here.</a>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("register").click(function () {
+                var password = $("#password").val();
+                var confirmPassword = $("#password_repeat").val();
+                if (password != confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>
